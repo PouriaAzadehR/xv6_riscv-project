@@ -1,3 +1,5 @@
+#include "types.h"
+
 struct stat;
 
 // system calls
@@ -22,6 +24,10 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+
+// my project ###################################################################################
+
+uint64 kfreemem(void);
 
 // ulib.c
 int stat(const char*, struct stat*);

@@ -1,8 +1,8 @@
-# Install script for directory: D:/xv6-riscv
+# Install script for directory: D:/University/Term 5/OS(javadi)/project/code/xv6_riscv-project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/xv6_riscv")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/xv6_riscv_project")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/xv6-riscv/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/University/Term 5/OS(javadi)/project/code/xv6_riscv-project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
