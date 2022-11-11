@@ -93,9 +93,5 @@ sys_uptime(void)
 // my project ###################################################################################
 
 uint64 sys_kfreemem(void){
-    printf("%d \n",cal_freemem());
-    kinit();
-    printf("%d \n",cal_freemem());
-    kalloc();
     return cal_freemem();
 }

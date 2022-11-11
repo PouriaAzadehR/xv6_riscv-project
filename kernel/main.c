@@ -4,6 +4,7 @@
 #include "riscv.h"
 #include "defs.h"
 
+
 volatile static int started = 0;
 
 // start() jumps here in supervisor mode on all CPUs.
@@ -28,6 +29,9 @@ main()
     iinit();         // inode table
     fileinit();      // file table
     virtio_disk_init(); // emulated hard disk
+    // my project
+    printf("%d\n" , cal_freemem());
+    printf("As it can be seen the freemem number is approximately equal to system memory which is 128 * 1024 * 1024 = 134217728\n");
     userinit();      // first user process
     __sync_synchronize();
     started = 1;
